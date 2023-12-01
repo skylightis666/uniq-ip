@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sorter;
 
 import java.util.Comparator;
 import java.util.StringTokenizer;

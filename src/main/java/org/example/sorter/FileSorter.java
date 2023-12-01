@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sorter;
 
 import com.google.code.externalsorting.ExternalSort;
 
@@ -14,6 +14,7 @@ public class FileSorter {
     private final String inputFileName;
     private final String outputFileName;
     private final Comparator<String> ipComparator;
+
     public FileSorter(String inputFileName) {
         this.inputFileName = inputFileName;
         this.outputFileName = inputFileName + "_SORTED";

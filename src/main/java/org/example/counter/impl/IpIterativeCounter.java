@@ -1,17 +1,22 @@
-package org.example;
+package org.example.counter.impl;
 
-import java.io.*;
+import org.example.counter.Counter;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.math.BigInteger;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class IpCounter {
-    private static final Logger logger = Logger.getLogger(IpCounter.class.getName());
+public class IpIterativeCounter implements Counter {
+    private static final Logger logger = Logger.getLogger(IpIterativeCounter.class.getName());
 
     private final File file;
 
 
-    public IpCounter(File file) {
+    public IpIterativeCounter(File file) {
         this.file = file;
     }
 
